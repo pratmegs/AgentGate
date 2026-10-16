@@ -1,0 +1,22 @@
+version: 1
+departments: [Customer Support, Finance, HR, IT Operations]
+environments: [development, staging, production]
+classifications: [public, internal, confidential, restricted]
+systems:
+  crm: Customer Support
+  payments: Finance
+  payroll: HR
+  infrastructure: IT Operations
+actions:
+  read: read
+  draft: draft
+  refund: refund
+  transfer: transfer
+  update: update
+  delete: delete
+  export: export
+  configure: configure
+  grant_admin: admin
+financial_actions: [refund, transfer]
+privileged_actions: [grant_admin]
+approver: Department owner and security reviewer

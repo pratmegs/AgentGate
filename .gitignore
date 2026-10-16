@@ -1,0 +1,23 @@
+.venv/
+.uv-cache/
+__pycache__/
+.pytest_cache/
+.env
+.env.*
+*.log
+.cache/
+.tmp/
+
+# Runtime output and local evaluation evidence
+results/
+diagnostics/stage3c_screenshots/
+
+# Local planning and development notes
+Prompt file.docx
+STAGE1_REPORT.md
+STAGE2_REPORT.md
+STAGE3A_REPORT.md
+STAGE3B_REPORT.md
+STAGE3C_UI_QA_REPORT.md
+TRACING_REPORT.md
+PILOT_EVALUATION_REPORT.md

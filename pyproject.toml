@@ -1,0 +1,29 @@
+[project]
+name = "agentgate"
+version = "0.1.0"
+description = "Experimental supervisory gateway for evaluating AI-agent tool calls before execution"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.14"
+dependencies = [
+    "pydantic>=2.13.5",
+    "pyyaml>=6.0.3",
+    "rich>=15.0.0",
+    "streamlit>=1.65.0",
+]
+
+[project.optional-dependencies]
+decision = [
+    "safetensors>=0.8.0",
+    "torch>=2.14.1",
+    "transformers>=5.17",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ['.']
+markers = ['real_model: opt-in actual Decision 2.0 inference from the verified local checkpoint']
